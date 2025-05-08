@@ -8,7 +8,7 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <div className="min-h-screen custom-diag-bg flex flex-col items-center px-4 py-16">
+    <div className="custom-diag-bg flex flex-col items-center px-4 py-16">
       {/* Header */}
       <div className="w-full max-w-2xl mx-auto text-center mb-16 relative">
         {/* Decorative background */}

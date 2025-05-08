@@ -3,45 +3,45 @@ const WorkSection = () => {
   const projects = [
     // Top row (wide cards)
     {
-      title: "Wide Card 1",
-      description: "Description for wide card 1",
-      category: "CATEGORY 1",
-      image: "/images/wide1.jpg",
+      title: "Alcohol Tracker",
+      description: "All-In-One (AIO) Service",
+      image: "/images/alcohol.webp",
+      className: "w-full h-full object-cover object-bottom",
       wide: true,
     },
     {
-      title: "Wide Card 2",
-      description: "Description for wide card 2",
-      category: "CATEGORY 2",
-      image: "/images/wide2.jpg",
+      title: "RELY",
+      description: "All-In-One (AIO) Service",
+      image: "/images/rely.jpg",
+      className: "w-full h-full object-cover object-middle scale-125 transform origin-center",
       wide: true,
     },
     // Bottom row (regular cards)
     {
-      title: "Card 1",
-      description: "Description for card 1",
-      category: "CATEGORY 3",
-      image: "/images/card1.jpg",
+      title: "Alcohol Tracker",
+      description: "All-In-One (AIO) Service",
+      image: "/images/phone2.webp",
+      className: "w-full h-full object-cover object-bottom",
       wide: false,
     },
     {
-      title: "Card 2",
-      description: "Description for card 2",
-      category: "CATEGORY 4",
-      image: "/images/card2.jpg",
+      title: "Finance Website",
+      description: "All-In-One (AIO) Service",
+      image: "/images/finance.jpg",
+      className: "w-full h-full object-cover object-bottom",
       wide: false,
     },
     {
-      title: "Card 3",
-      description: "Description for card 3",
-      category: "CATEGORY 5",
-      image: "/images/card3.jpg",
+      title: "Alcohol Tracker",
+      description: "All-In-One (AIO) Service",
+      image: "/images/bus.jpg",
+      className: "w-full h-full object-cover object-top",
       wide: false,
     },
   ];
 
   return (
-    <section className="custom-diag-bg py-20 px-4 sm:px-6 lg:px-8">
+    <section className=" custom-diag-bg py-20 px-4 sm:px-6 lg:px-8">
       {/* Page Header */}
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-[#b3cfff] via-white to-[#b3cfff] bg-clip-text text-transparent leading-tight drop-shadow-lg mb-4">
@@ -59,24 +59,22 @@ const WorkSection = () => {
           .map((project, idx) => (
             <div
               key={idx}
-              className="w-full md:w-1/2 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
+              className="w-full md:w-1/2 bg-black rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
-              <div className="relative aspect-[3/2]">
+              {/* Image container with constrained height */}
+              <div className="relative aspect-[3/2] max-h-64 md:max-h-64 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className={project.className} // Added object-top
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
-                <span className="absolute top-4 right-4 bg-white/80 px-3 py-1 rounded-full text-sm font-medium">
-                  {project.category}
-                </span>
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              {/* Text container with flex-1 to maintain consistent height */}
+              <div className="p-6 flex-1">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600">{project.description}</p>
+                <p className="text-white">{project.description}</p>
               </div>
             </div>
           ))}
@@ -89,7 +87,7 @@ const WorkSection = () => {
           .map((project, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-black rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative aspect-square">
                 <img
@@ -97,16 +95,12 @@ const WorkSection = () => {
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
-                <span className="absolute top-4 right-4 bg-white/80 px-3 py-1 rounded-full text-sm font-medium">
-                  {project.category}
-                </span>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <div className="p-6 flex-1">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600">{project.description}</p>
+                <p className="text-white">{project.description}</p>
               </div>
             </div>
           ))}
