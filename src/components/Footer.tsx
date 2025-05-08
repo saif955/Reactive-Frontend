@@ -13,7 +13,7 @@ const Footer = () => {
                 href="mailto:hey@pixll.com"
                 className="text-3xl font-semibold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent transition-all hover:opacity-80"
               >
-                Let&apos;s Talk // Changed from Let's Talk
+                Let&apos;s Talk
               </a>
               <p className="mt-2 text-white/80">hey@pixll.com</p>
             </div>
