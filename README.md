@@ -2,6 +2,7 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Visit the live deployment of the app deployed on vercel [Link](https://zorgit-task-vbdk-1daym89lq-saifur-rahmans-projects-5cc34c0e.vercel.app/).
 ## Description
 
 This project is a web application built using Next.js, designed to showcase various services and projects. It utilizes modern web technologies to provide a seamless user experience.
@@ -44,9 +45,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 ## Contributing
 
@@ -58,4 +59,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries, please reach out to [your-email@example.com](mailto:saif.rahman.95595@gmail.com).
+For any inquiries, please reach out to [saif.rahman.95595@gmail.com](mailto:saif.rahman.95595@gmail.com).
